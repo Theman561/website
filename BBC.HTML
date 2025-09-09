@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ReadSolve: AI Reading Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ReadSolve</h1>
+    <p>Crack reading comprehension with AI-level insight</p>
+  </header>
+
+  <main>
+    <section>
+      <label for="passage">Enter Reading Passage:</label><br>
+      <textarea id="passage" rows="10" cols="80"></textarea>
+    </section>
+
+    <section>
+      <label for="question">Ask a Question:</label><br>
+      <input type="text" id="question" size="80">
+    </section>
+
+    <section>
+      <label for="complexity">Select Complexity:</label>
+      <select id="complexity">
+        <option value="basic">Basic</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </section>
+
+    <button onclick="getAnswer()">Get Answer</button>
+
+    <section id="answer">
+      <!-- AI-generated answer will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Frislande | Powered by Insight</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
